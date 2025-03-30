@@ -343,6 +343,9 @@ h2::after {
     background: linear-gradient(45deg, #5865F2, #7289da);
 }
 
+.github {
+    background: linear-gradient(45deg, ##06060f, #171734);
+}
 footer {
     text-align: center;
     padding: 20px 0;
