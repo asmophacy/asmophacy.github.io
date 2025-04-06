@@ -487,3 +487,19 @@ html {
         opacity: 1;
     }
 } 
+
+.button-container button {
+    font-size: 1.5rem;
+    padding: 15px 30px;
+    background-color: red;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+.button-container button:hover {
+    transform: scale(1.1);
+}
+
