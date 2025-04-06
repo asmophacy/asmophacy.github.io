@@ -540,5 +540,11 @@ html {
     transform: scale(1.1);
 }
 
+/* Change cursor to custom select cursor on hover */
+a:hover, button:hover, .game-card:hover {
+    cursor: url('assets/cursors/select.cur'), pointer; /* Fallback to pointer */
+}
+
+
 
 
