@@ -346,6 +346,7 @@ h2::after {
 .github {
     background: linear-gradient(45deg, #06060f, #171734);
 }
+
 .socials {
     text-align: center;
     margin: 0 auto;
@@ -521,4 +522,6 @@ html {
 .button-container button:hover {
     transform: scale(1.1);
 }
+
+
 
