@@ -4,16 +4,36 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Asmophacy's cute website</title>
+    <!-- Favicon -->
     <link rel="shortcut icon" type="image/x-icon" href="assets/favicon.ico" />
+    <!-- Main CSS -->
     <link rel="stylesheet" href="styles.css">
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        /* Add spacing between sections */
+        section {
+            margin-bottom: 40px; /* Adjust this value to increase or decrease spacing */
+        }
+
+        /* Add spacing between the Socials and Miscellaneous sections */
+        #socials {
+            margin-bottom: 40px; /* Adds space below the Socials section */
+        }
+
+        #miscellaneous {
+            margin-top: 40px; /* Adds space above the Miscellaneous section */
+        }
+    </style>
 </head>
 <body>
     <div class="container">
         <header>
+            <!-- Navigation Bar -->
             <nav>
                 <a href="#about"><i class="fas fa-user"></i> About</a>
                 <a href="#games"><i class="fas fa-gamepad"></i> Games</a>
@@ -23,6 +43,7 @@
         </header>
 
         <main>
+            <!-- Hero Section -->
             <section class="hero">
                 <div class="hero-text">
                     <h1>Hi, I'm <span class="highlight">Asmophacy</span></h1>
@@ -30,6 +51,7 @@
                 </div>
             </section>
 
+            <!-- About Section -->
             <section id="about" class="about">
                 <h2>About Me</h2>
                 <div class="about-content">
@@ -52,6 +74,8 @@
                     </div>
                 </div>
             </section>
+
+            <!-- Games Section -->
             <section id="games" class="games">
                 <h2>My Favorite Games</h2>
                 <div class="games-grid">
@@ -70,6 +94,7 @@
                 </div>
             </section>
 
+            <!-- Socials Section -->
             <section id="socials" class="socials">
                 <h2>My Socials</h2>
                 <div class="social-links">
@@ -91,12 +116,8 @@
                     </a>
                 </div>
             </section>
-            
-        </div>
-    </div>
-</section>
 
-<!-- Miscellaneous Section -->
+            <!-- Miscellaneous Section -->
             <section id="miscellaneous" class="socials">
                 <div class="social-links">
                     <h2>Miscellaneous</h2>
@@ -165,7 +186,7 @@
                 window.location.href = 'https://www.youtube.com/watch?v=dQw4w9WgXcQ';
             }, 5000); // After 5 seconds
         });
-        
+
         // Check if the user is on a mobile device (including Android phones)
         const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
 
@@ -185,9 +206,6 @@
         }
     </script>
 </body>
-</html> 
-        </footer>
-    </div>
-</body>
 </html>
+
 
