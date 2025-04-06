@@ -297,6 +297,10 @@ h2::after {
     background-image: url('assets/justcause3.jpg');
 }
 
+.titanfall2 {
+    background-image: url('assets/titanfall2.jpg');
+}
+
 .game-card h3 {
     padding: 15px;
     text-align: center;
