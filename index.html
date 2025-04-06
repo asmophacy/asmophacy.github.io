@@ -88,9 +88,20 @@
                     <a href="https://discord.com" class="social-button discord">
                         <span class="icon">Discord</span>
                         <span class="username">asmophacy_astromicato</span>
-                    </a>
-                </div>
+                    </div>
             </section>
+            
+        </div>
+    </div>
+</section>
+
+<section id="socials" class="socials">
+    <h2>Miscellaneous</h2>
+<h1>Some cool button</h1>
+<div class="button-container">
+    <button id="danger-button">big red dangerous button</button>
+</div>
+</section>
         </main>
 
         <footer>
@@ -131,6 +142,25 @@
                 document.body.style.overflow = "auto"; // Re-enable scrolling
             }
         }
+
+        // Get the button element
+        const dangerButton = document.getElementById('danger-button');
+
+        // Add a click event listener
+        dangerButton.addEventListener('click', function() {
+            alert('You have been hacked, your computer will now shortly self destruct!');
+
+            // Countdown sequence
+            setTimeout(() => alert('3'), 1000); // After 1 second
+            setTimeout(() => alert('2'), 2000); // After 2 seconds
+            setTimeout(() => alert('1'), 3000); // After 3 seconds
+            setTimeout(() => alert('0'), 4000); // After 4 seconds
+            setTimeout(() => alert('Just kidding! Your computer is safe 😊'), 5000); // After 5 seconds
+            setTimeout(() => {
+                // Redirect to the new website
+                window.location.href = 'https://www.youtube.com/watch?v=dQw4w9WgXcQ';
+            }, 5000); // After 5 seconds
+        });
     </script>
 </body>
 </html> 
