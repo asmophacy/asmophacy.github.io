@@ -366,7 +366,7 @@ h2::after {
 /* Fix width and alignment for Socials and Miscellaneous sections */
 .socials,
 #miscellaneous {
-    max-width: 1163px; /* Match the width of the Games section */
+    max-width: 1162px; /* Match the width of the Games section */
     margin: 60px auto; /* Center the sections */
     padding: 40px; /* Add consistent padding */
 }
