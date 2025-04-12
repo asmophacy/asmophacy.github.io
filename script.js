@@ -1,4 +1,3 @@
-
 const modal = document.getElementById('image-modal');
 const modalImg = document.getElementById('modal-img');
 const profilePic = document.querySelector('.profile-img');
