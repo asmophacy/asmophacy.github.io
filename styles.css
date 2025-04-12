@@ -543,6 +543,13 @@ a:hover, button:hover, .game-card:hover {
     cursor: url('assets/cursors/select.cur'), pointer; /* Fallback to pointer */
 }
 
+.centered-title {
+    text-align: center;
+    /* Optional: Adjust margin if needed */
+    margin-top: 40px; /* Add some space above */
+    margin-bottom: 20px; /* Add some space below */
+}
+
 
 
 
