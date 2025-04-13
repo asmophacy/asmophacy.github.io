@@ -74,7 +74,6 @@ header {
     text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     letter-spacing: 1px;
     background: linear-gradient(45deg, var(--primary-dark), var(--primary-color));
-    -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
