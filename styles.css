@@ -52,8 +52,11 @@ header {
     justify-content: center;
     align-items: center;
     padding: 15px 25px;
-    position: sticky;
-    top: 10px;
+    position: fixed;
+    top: 17px;
+    left: 180px;
+    right: 0;
+    width: 1160px;
     z-index: 1000;
     background: rgba(255, 255, 255, 0.15);
     backdrop-filter: blur(15px);
