@@ -57,7 +57,7 @@ header {
     left: 180px;
     right: 0;
     width: 1160px;
-    z-index: 1000;
+    z-index: 100;
     background: rgba(255, 255, 255, 0.15);
     backdrop-filter: blur(15px);
     -webkit-backdrop-filter: blur(15px);
