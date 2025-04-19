@@ -46,7 +46,6 @@ body {
     padding: 0 20px;
 }
 
-
 header {
     display: flex;
     justify-content: center;
@@ -57,7 +56,7 @@ header {
     bottom: 0 auto;
     left: 180px;
     right: 180px;
-    width: 0 auto;
+    width: 1160 px;
     z-index: 100;
     background: rgba(255, 255, 255, 0.15);
     backdrop-filter: blur(15px);
@@ -67,7 +66,6 @@ header {
     margin: 0 0 20px 0;
     border-radius: 16px 16px 16px 16px;
 }
-
 
 .logo {
     font-size: 2rem;
