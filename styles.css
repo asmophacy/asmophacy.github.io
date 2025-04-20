@@ -379,6 +379,10 @@ footer {
     opacity: 0.7;
 }
 
+centertext {
+    text-align: center;
+}
+
 #miscellaneous h2 {
     text-align: left; /* Align the heading to the left */
     margin-left: 0; /* Remove any centering margin */
