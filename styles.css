@@ -422,10 +422,10 @@ centertext {
     }
 }
     /* Hide header on small screens */
-    header {
-      display: none;
-    }
-}
+   @media (max-width: 768px) {
+  header {
+    display: none;
+  }
 
 @media screen and (max-width: 480px) {
     .hero-text h1 {
