@@ -414,18 +414,18 @@ centertext {
     
     header {
         flex-direction: column;
-        gap: 15px;
+        gap: 0px auto;
     }
     
     section {
         padding: 30px 20px;
     }
-}
+
     /* Hide header on small screens */
-   @media (max-width: 768px) {
-  header {
-    display: none;
-  }
+    header {
+      display: none;
+    }
+}
 
 @media screen and (max-width: 480px) {
     .hero-text h1 {
