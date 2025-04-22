@@ -42,21 +42,20 @@ dangerButton.addEventListener('click', function() {
         window.location.href = 'https://www.youtube.com/watch?v=dQw4w9WgXcQ';
     }, 5000); // After 5 seconds
 });
-
+//disabled due to not being needed anymore
 // Check if the user is on a mobile device (including Android phones)
-const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+//const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
 
-if (isMobile) {
+//if (isMobile) {
     // Function to check screen orientation
-    const checkOrientation = () => {
-        if (window.innerHeight > window.innerWidth) {
-            alert("Please turn your phone horizontally to see the website properly.");
-        }
-    };
+    //const checkOrientation = () => {
+        //if (window.innerHeight > window.innerWidth) {
+            //alert("Please turn your phone horizontally to see the website properly.");
+        //}
+    //};
 
     // Run the check on page load
     checkOrientation();
 
     // Add an event listener to detect orientation changes
     window.addEventListener("resize", checkOrientation);
-}
