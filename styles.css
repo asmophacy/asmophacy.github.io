@@ -303,6 +303,10 @@ h2::after {
     background-image: url('assets/titanfall2.avif');
 }
 
+.justshapesandbeats {
+    background-image: url('assets/justshapenbeats.jpg')
+}
+
 .game-card h3 {
     padding: 15px;
     text-align: center;
