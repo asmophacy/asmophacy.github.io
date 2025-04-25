@@ -421,7 +421,7 @@ centertext {
         padding: 30px 20px;
     }
 
-    /* Hide header on small screens */
+    /* Hide header */
     header {
       display: none;
     }
@@ -543,7 +543,7 @@ html {
 
 /* Change cursor to custom select cursor on hover */
 a:hover, button:hover, .game-card:hover {
-    cursor: url('assets/cursors/select.cur'), pointer; /* Fallback to pointer */
+    cursor: url('assets/frutiger-aero-cursor/select.cur'), pointer; /* Fallback to pointer */
 }
 
 .centered-title {
