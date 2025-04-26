@@ -560,6 +560,10 @@ a:hover, button:hover, .game-card:hover {
     margin-bottom: 20px; /* Add some space below */
 }
 
+.margin-top {
+    margin-top: 20px;
+}
+
 
 
 
