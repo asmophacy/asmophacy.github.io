@@ -386,6 +386,10 @@ footer {
     opacity: 0.7;
 }
 
+lmargin {
+  margin-left: 7px;
+}
+
 centertext {
     text-align: center;
 }
@@ -560,9 +564,7 @@ a:hover, button:hover, .game-card:hover {
     margin-bottom: 20px; /* Add some space below */
 }
 
-.lmargin {
-  margin-left: 7px;
-}
+
 
 
 
