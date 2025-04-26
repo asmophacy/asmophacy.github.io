@@ -347,6 +347,15 @@ h2::after {
     font-weight: 600;
     margin-right: 15px;
     min-width: 80px;
+    display: inline-flex; 
+    align-items: center; 
+}
+
+
+.icon > i,
+.icon > svg { 
+    margin-right: 7px;
+    vertical-align: middle; 
 }
 
 .tiktok {
@@ -365,7 +374,9 @@ h2::after {
     background: linear-gradient(45deg, #06060f, #171734);
 }
 
-
+.proton {
+    background: linear-gradient(45deg, #4f46e5, #5865F2 );
+}
 
 .socials h2 {
     text-align: left; /* Align the heading to the left */
