@@ -548,18 +548,29 @@ html {
     }
 } 
 
-.button-container button {
+.button-container-danger button {
     font-size: 1.5rem;
     padding: 15px 30px;
     background-color: red;
     color: white;
     border: none;
     border-radius: 8px;
-    cursor: pointer;
     transition: transform 0.2s ease;
-}
+    text-align: center;
+    border:
+    none;
+    border-radius:
+    8px;
+    box-shadow: 0 4px #9c1c1c;
+    cursor: pointer;
+      }
 
-.button-container button:hover {
+      .button-container-danger:active {
+        box-shadow: 0px auto #d11111;
+        transform: translateY(2px);
+    }
+
+.button-container-danger button:hover {
     transform: scale(1.1);
 }
 
