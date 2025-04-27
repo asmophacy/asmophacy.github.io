@@ -55,7 +55,8 @@ dangerButton.addEventListener('click', function() {
     //};
 
     // Run the check on page load
-    checkOrientation();
+//    checkOrientation(); // This line was causing an error as checkOrientation is defined inside the commented block
 
     // Add an event listener to detect orientation changes
-    window.addEventListener("resize", checkOrientation);
+//    window.addEventListener("resize", checkOrientation);
+//} // Closing brace for the commented if (isMobile) block
