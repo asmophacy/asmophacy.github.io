@@ -570,10 +570,59 @@ html {
         transform: translateY(2px);
     }
 
-.button-container-danger button:hover {
+.button-container-particle button {
+    font-size: 1.5rem;
+    padding: 15px 30px;
+    background-color: blue;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    transition: transform 0.2s ease;
+    text-align: center;
+    border:
+    none;
+    border-radius:
+    8px;
+    box-shadow: 0 4px #17368a;
+    cursor: pointer;
+    position: relative;
+    /* Change overflow: hidden to overflow: visible for particles to fly out */
+    overflow: visible; /* {{CHANGE}} */
+    outline: none;
+}
+
+.button-container-particle:active {
+    box-shadow: 0px auto #172098; /* You might want a simpler shadow like `box-shadow: 0 2px #17368a;` */
+    transform: translateY(2px);
+    background-color: #4682B4; /* Darker blue on active */
+}
+
+.particle {
+    position: absolute; /* Positioned relative to the button */
+    left: 50%; /* Start horizontal center */
+    top: 50%; /* Start vertical center */
+    width: 6px; /* Particle size */
+    height: 6px; /* Particle size */
+    background-color: #ADD8E6; /* Particle color (light blue) */
+    border-radius: 50%; /* Make them circles */
+    pointer-events: none; /* Particles should not be clickable */
+    opacity: 1; /* Start fully visible */
+    /* Start centered using translate */
+    transform: translate(-50%, -50%);
+    /* Define the transition for animation */
+    transition: transform 0.6s cubic-bezier(0.17, 0.84, 0.44, 1), opacity 0.6s ease-out;
+}
+
+.button-container button:hover {
     transform: scale(1.1);
 }
 
+.button-container {
+    display: flex;
+    gap: 21px; /* Adjust as needed */
+    justify-content: center;
+     align-items: center;
+  }
 /* Change cursor to custom select cursor on hover */
 a:hover, button:hover, .game-card:hover {
     cursor: url('assets/frutiger-aero-cursor/select.cur'), pointer; /* Fallback to pointer */
