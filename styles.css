@@ -586,6 +586,14 @@ a:hover, button:hover, .game-card:hover {
     margin-bottom: 20px; /* Add some space below */
 }
 
+.social-button .icon {
+    width: 90px;
+    flex-shrink: 0;
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    white-space: nowrap;
+}
 
 
 
