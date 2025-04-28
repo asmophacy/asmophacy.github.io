@@ -60,6 +60,7 @@ dangerButton.addEventListener('click', function() {
     // Add an event listener to detect orientation changes
 //    window.addEventListener("resize", checkOrientation);
 //} // Closing brace for the commented if (isMobile) block
+// Your copy function (make sure it's defined, preferably near the top or outside the DOMContentLoaded if needed elsewhere)
 
 function copyText() {
     /* Copy text into clipboard */
