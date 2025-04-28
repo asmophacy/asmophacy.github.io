@@ -142,3 +142,8 @@ document.addEventListener('DOMContentLoaded', () => {
         console.warn('Could not find the Discord link element (a.social-button.discord).');
     }
 });
+ function playsound() {
+    
+    var sfx = document.getElementById("sfx");
+    sfx.autoplay = 'true';
+sfx.load();}
