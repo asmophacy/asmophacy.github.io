@@ -378,6 +378,10 @@ h2::after {
     background: linear-gradient(45deg, #4f46e5, #5865F2 );
 }
 
+.reddit {
+    background: linear-gradient(45deg, #D93900, #e7112a)
+}
+
 .socials h2 {
     text-align: left; /* Align the heading to the left */
     margin-left: 0; /* Remove any centering margin */
