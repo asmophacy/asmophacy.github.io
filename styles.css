@@ -156,6 +156,7 @@ nav a:hover::before {
 .highlight {
     color: var(--primary-color);
     font-weight: 700;
+    font-family: "Playfair Display", serif;
 }
 
 
