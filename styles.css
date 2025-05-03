@@ -26,6 +26,7 @@ body {
     animation: gradientBG 15s ease infinite;
     line-height: 1.6;
     cursor: url('assets/frutiger-aero-cursor/normal.cur'), auto; /* Fallback to default cursor */
+    position: relative;
 }
 
 @keyframes gradientBG {
@@ -648,6 +649,42 @@ a:hover, button:hover, .game-card:hover {
     gap: 5px;
     white-space: nowrap;
 }
+
+.floating-copy-text {
+    position: absolute;
+    border: 2px solid var(--primary-light); 
+    color: var(--primary-light);
+    background-color: rgba(255, 255, 255, 0.85);
+    padding: 6px 12px; /* Adjust padding */
+    border-radius: 20px; /* Make it pill-shaped */
+    font-size: 0.9em;
+    font-family: 'Poppins', sans-serif;
+    z-index: 1000;
+    pointer-events: none;
+    animation: float-and-fade 1.5s ease-out forwards;
+    white-space: nowrap;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional: add subtle shadow */
+  }
+  
+  /* Error state styling adjustment */
+  .floating-copy-text.error { /* Add an error class for specific styling */
+      border-color: #dc2626; /* Red border for error */
+      color: #dc2626; /* Red text for error */
+      background-color: rgba(255, 235, 235, 0.85); /* Lighter red background */
+  }
+  
+  
+  @keyframes float-and-fade {
+    0% {
+      opacity: 1;
+      transform: translate(-50%, 0); /* Start centered horizontally */
+    }
+    100% {
+      opacity: 0;
+      transform: translate(-50%, -30px); /* Move 30px up while fading out */
+    }
+  }
+  
 
 
 
