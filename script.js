@@ -76,35 +76,82 @@ function copyText() {
 document.addEventListener('DOMContentLoaded', () => {
     // ... other code ...
 
-    // --- Email Copy Code ---
-    const emailLink = document.querySelector('a.social-button.proton'); // Select the specific Proton link
+// email copy code
+    const emailLink = document.querySelector('a.social-button.proton');
 
     if (emailLink) {
-        // Remove the code block that directly used navigator.clipboard.writeText
-        // Find the emailLink.addEventListener('click', ...) block from previous attempts
-
+        // {{ START: Modify ProtonMail button click listener }}
         emailLink.addEventListener('click', (event) => {
-            event.preventDefault(); // Prevent navigating to the link's href
-            copyText(); // Call your function here
+            event.preventDefault(); // Prevent navigating
 
-            // Optional: Add the visual feedback logic here if needed,
-            // using iconSpan and originalIconHTML like before,
-            // since copyText() itself doesn't handle it.
-            const iconSpan = emailLink.querySelector('span.icon');
-            if (iconSpan) {
-                const originalIconHTML = iconSpan.innerHTML;
-                iconSpan.textContent = 'Copied';
-                 setTimeout(() => {
-                    iconSpan.innerHTML = originalIconHTML;
-                 }, 2000);
-            }
+            const emailToCopy = "minhkhoi.nguyengamer12@proton.me"; // Define email here
+
+            navigator.clipboard.writeText(emailToCopy).then(() => {
+                // Success: Create the floating text effect
+                const floatingText = document.createElement('span');
+                floatingText.textContent = 'Copied!';
+                floatingText.classList.add('floating-copy-text');
+
+                // Position the floating text
+                const rect = emailLink.getBoundingClientRect();
+                floatingText.style.position = 'absolute';
+                floatingText.style.left = `${window.scrollX + rect.left + rect.width / 2}px`;
+                floatingText.style.top = `${window.scrollY + rect.top - 10}px`;
+                floatingText.style.transform = 'translateX(-50%)';
+
+                document.body.appendChild(floatingText);
+
+                // Remove the element after the animation
+                const removeElement = () => {
+                     if (floatingText.parentNode) {
+                        floatingText.remove();
+                     }
+                };
+                floatingText.addEventListener('animationend', removeElement);
+                setTimeout(removeElement, 1500); // Fallback
+
+            }).catch(err => {
+                console.error('Failed to copy email: ', err);
+
+                // Failure: Create floating text with error styling
+                const floatingText = document.createElement('span');
+                floatingText.textContent = 'Copy Failed!';
+                floatingText.classList.add('floating-copy-text', 'error');
+
+                // Position the floating text
+                const rect = emailLink.getBoundingClientRect();
+                floatingText.style.position = 'absolute';
+                floatingText.style.left = `${window.scrollX + rect.left + rect.width / 2}px`;
+                floatingText.style.top = `${window.scrollY + rect.top - 10}px`;
+                floatingText.style.transform = 'translateX(-50%)';
+
+                document.body.appendChild(floatingText);
+
+                // Remove the element after the animation
+                const removeElement = () => {
+                     if (floatingText.parentNode) {
+                        floatingText.remove();
+                     }
+                };
+                floatingText.addEventListener('animationend', removeElement);
+                setTimeout(removeElement, 1500); // Fallback
+            });
+            // {{ Remove old feedback mechanism }}
+            // const iconSpan = emailLink.querySelector('span.icon');
+            // if (iconSpan) {
+            //     const originalIconHTML = iconSpan.innerHTML;
+            //     iconSpan.textContent = 'Copied';
+            //     setTimeout(() => {
+            //         iconSpan.innerHTML = originalIconHTML;
+            //     }, 2000);
+            // }
+
         });
+        // {{ END: Modify ProtonMail button click listener }}
 
     } else {
         console.warn('Could not find the email link element (a.social-button.proton).');
     }
-
-    // ... rest of your code ...
     const discordLink = document.querySelector('a.social-button.discord'); // Select the specific Discord link
 
     if (discordLink) {
@@ -119,21 +166,65 @@ document.addEventListener('DOMContentLoaded', () => {
                 event.preventDefault(); // Prevent navigating to the link's href
 
                 navigator.clipboard.writeText(discordUsername).then(() => {
-                    // Success: Change text and revert after delay
-                    iconSpan.textContent = 'Copied'; // Change text for feedback
+                    // Success: Create the floating text effect
+                    // Success: Create the floating text effect
+                    // {{ START: New floating text mechanism }}
+                    const floatingText = document.createElement('span');
+                    floatingText.textContent = 'Copied!';
+                    floatingText.classList.add('floating-copy-text'); // Add base class
 
-                    setTimeout(() => {
-                        iconSpan.innerHTML = originalIconHTML; // Restore original icon HTML
-                    }, 2000); // Revert back after 2 seconds
+                    // Position the floating text near the button
+                    const rect = discordLink.getBoundingClientRect();
+                    floatingText.style.position = 'absolute';
+                    // Position slightly above and centered horizontally relative to the button, accounting for scroll
+                    floatingText.style.left = `${window.scrollX + rect.left + rect.width / 2}px`;
+                    floatingText.style.top = `${window.scrollY + rect.top - 10}px`; // 10px above the button
+                    floatingText.style.transform = 'translateX(-50%)'; // Center horizontally
+
+                    document.body.appendChild(floatingText); // Add to the body
+
+                    // Remove the element after the animation finishes (duration should match CSS)
+                    floatingText.addEventListener('animationend', () => {
+                        if (floatingText.parentNode) { // Check if it hasn't already been removed
+                            floatingText.remove();
+                        }
+                    });
+                     // Fallback removal in case animationend doesn't fire reliably
+                     setTimeout(() => {
+                        if (floatingText.parentNode) {
+                           floatingText.remove();
+                        }
+                     }, 1500); // Matches CSS animation duration
+
+                    // {{ END: New floating text mechanism }}
 
                 }).catch(err => {
-                    // Error handling
                     console.error('Failed to copy Discord username: ', err);
-                    // Optionally provide user feedback on failure
-                    iconSpan.textContent = 'Copy Failed!';
+
+                    // Optional: Implement a floating text for failure as well
+                    const floatingText = document.createElement('span');
+                    floatingText.textContent = 'Copy Failed!';
+                    floatingText.classList.add('floating-copy-text'); // Reuse the style or create a new one for error
+                    floatingText.style.backgroundColor = 'rgba(200, 0, 0, 0.7)'; // Red background for error
+
+                    const rect = discordLink.getBoundingClientRect();
+                    floatingText.style.position = 'absolute';
+                    floatingText.style.left = `${window.scrollX + rect.left + rect.width / 2}px`;
+                    floatingText.style.top = `${window.scrollY + rect.top - 10}px`;
+                    floatingText.style.transform = 'translateX(-50%)';
+
+                    document.body.appendChild(floatingText);
+
+                    floatingText.addEventListener('animationend', () => {
+                         if (floatingText.parentNode) {
+                           floatingText.remove();
+                        }
+                    });
                      setTimeout(() => {
-                        iconSpan.innerHTML = originalIconHTML; // Restore original icon HTML even on failure
-                    }, 2000);
+                        if (floatingText.parentNode) {
+                           floatingText.remove();
+                        }
+                     }, 1500);
                 });
             });
         } else {
