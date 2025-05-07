@@ -684,7 +684,15 @@ a:hover, button:hover, .game-card:hover {
       transform: translate(-50%, -30px); /* Move 30px up while fading out */
     }
   }
-  
+
+  .links{
+    color: var(--primary-color)
+  }
+
+  .links:hover{
+    color: var(--primary-light);
+    opacity: 0.9;
+  }
 
 
 
