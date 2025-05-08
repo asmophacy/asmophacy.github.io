@@ -642,6 +642,28 @@ html {
         transform: translateY(2px);
     }
 
+    .button-container-vietnam button {
+        font-size: 1.5rem;
+        padding: 15px 30px;
+        background-color: var(--primary-color);
+        color: white;
+        border: none;
+        border-radius: 8px;
+        transition: transform 0.2s ease;
+        text-align: center;
+        border:
+        none;
+        border-radius:
+        8px;
+        box-shadow: 0 4px var(--primary-dark);
+        cursor: pointer;
+          }
+    
+          .button-container-vietnam:active {
+            box-shadow: 0px auto var(--primary-light);
+            transform: translateY(2px);
+        }
+
 .button-container button:hover {
     transform: scale(1.1);
 }
