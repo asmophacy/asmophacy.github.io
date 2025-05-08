@@ -260,6 +260,3 @@ document.addEventListener('DOMContentLoaded', function() {
     document.body.classList.add('jsb-mode');
      }
 });
-    var sfx = document.getElementById("sfx");
-    sfx.autoplay = 'true';
-sfx.load();}
