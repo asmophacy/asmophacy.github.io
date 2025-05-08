@@ -74,8 +74,6 @@ function copyText() {
 }
 
 document.addEventListener('DOMContentLoaded', () => {
-    // ... other code ...
-
 // email copy code
     const emailLink = document.querySelector('a.social-button.proton');
 
@@ -236,8 +234,12 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
  function playsound() {
+    
+    var sfx = document.getElementById("sfx");
+    sfx.autoplay = 'true';
+sfx.load();}
 
-     document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function() {
     const jsbModeToggle = document.getElementById('jsbModeToggle');
     
     if (jsbModeToggle) {
@@ -258,7 +260,6 @@ document.addEventListener('DOMContentLoaded', () => {
     document.body.classList.add('jsb-mode');
      }
 });
-    
     var sfx = document.getElementById("sfx");
     sfx.autoplay = 'true';
 sfx.load();}
