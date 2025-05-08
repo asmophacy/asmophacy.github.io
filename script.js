@@ -260,3 +260,12 @@ document.addEventListener('DOMContentLoaded', function() {
     document.body.classList.add('jsb-mode');
      }
 });
+
+    function switchToVietnamese() {
+        if (typeof playsound === 'function') {
+            playsound();
+        }
+        // Use window.location.href for manual navigation, or .replace if you don't want
+        // the current page in the browser history before the switch.
+        window.location.href = 'https://asmophacy.github.io/website-vn/';
+    }
