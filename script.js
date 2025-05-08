@@ -236,6 +236,28 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
  function playsound() {
+
+     document.addEventListener('DOMContentLoaded', function() {
+    const jsbModeToggle = document.getElementById('jsbModeToggle');
+    
+    if (jsbModeToggle) {
+        jsbModeToggle.addEventListener('click', function() {
+            document.body.classList.toggle('jsb-mode');
+            
+            // Optional: Save user preference
+            if (document.body.classList.contains('jsb-mode')) {
+            localStorage.setItem('themeMode', 'jsb');
+            } else {
+            localStorage.removeItem('themeMode');
+            }
+        });
+    }
+
+    // Optional: Check for saved preference on page load
+    if (localStorage.getItem('themeMode') === 'jsb') {
+    document.body.classList.add('jsb-mode');
+     }
+});
     
     var sfx = document.getElementById("sfx");
     sfx.autoplay = 'true';
