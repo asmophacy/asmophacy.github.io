@@ -619,6 +619,28 @@ html {
     transition: transform 0.6s cubic-bezier(0.17, 0.84, 0.44, 1), opacity 0.6s ease-out;
 }
 
+.button-container-jsb button {
+    font-size: 1.5rem;
+    padding: 15px 30px;
+    background-color: red;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    transition: transform 0.2s ease;
+    text-align: center;
+    border:
+    none;
+    border-radius:
+    8px;
+    box-shadow: 0 4px #9c1c1c;
+    cursor: pointer;
+      }
+
+      .button-container-jsb:active {
+        box-shadow: 0px auto #d11111;
+        transform: translateY(2px);
+    }
+
 .button-container button:hover {
     transform: scale(1.1);
 }
@@ -694,8 +716,48 @@ a:hover, button:hover, .game-card:hover {
     opacity: 0.9;
   }
 
+  body.jsb-mode {
+    font-family: 'Poppins', sans-serif;
+    color: var(--text-color);
+    background: linear-gradient(135deg, #fee0e0, #febfbf, #fd9393, #fa6060);
+    background-attachment: fixed;
+    background-size: 400% 400%;
+    animation: gradientBG 15s ease infinite;
+    line-height: 1.6;
+    cursor: url('assets/jsab-cursor/normal.cur'), auto; /* Fallback to default cursor */
+    position: relative;
+    --primary-color: #eb2525;
+    --primary-light: #f63b3b;
+    --primary-dark: #d81d1d;
+    --secondary-color: #e54646;
+}
 
+/* Change cursor to custom select cursor on hover */
+    body.jsb-mode {
+a:hover, button:hover, .game-card:hover {
+    cursor: url('assets/jsab-cursor/select.cur'), pointer; /* Fallback to pointer */
+}}
 
+    body.jsb-mode .links {
+        color: #f54606;
+    }
+    body.jsb-mode  .links:hover {
+        color:#f76060;
+        opacity: 0.9;
+    }
 
+    body.jsb-mode .highlight {
+        color:#FE2C55
+    }
 
-
+    body.jsb-mode {
+         ::-webkit-scrollbar-thumb {
+        background: linear-gradient(to bottom, #fd9393, #fa6060);
+        border-radius: 10px;
+        border: 2px solid rgba(255, 255, 255, 0.2);
+    }
+    
+    ::-webkit-scrollbar-thumb:hover {
+        background: linear-gradient(to bottom, #fa6060, #f63b3b);
+    }
+}
