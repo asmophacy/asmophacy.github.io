@@ -25,7 +25,7 @@ body {
     background-size: 400% 400%;
     animation: gradientBG 15s ease infinite;
     line-height: 1.6;
-    cursor: url('assets/frutiger-aero-cursor/normal.cur'), auto; /* Fallback to default cursor */
+    cursor: url('assets/hl2-cursor/lambda.cur'), auto; /* Fallback to default cursor */
     position: relative;
 }
 
@@ -631,7 +631,7 @@ html {
   }
 /* Change cursor to custom select cursor on hover */
 a:hover, button:hover, .game-card:hover {
-    cursor: url('assets/frutiger-aero-cursor/select.cur'), pointer; /* Fallback to pointer */
+    cursor: url('assets/hl2-cursor/select.cur'), pointer; /* Fallback to pointer */
 }
 
 .centered-title {
