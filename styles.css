@@ -796,3 +796,10 @@ a:hover, button:hover, .game-card:hover {
         background: linear-gradient(to bottom, #fa6060, #f63b3b);
     }
 }
+
+    .title-text {
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+  }
