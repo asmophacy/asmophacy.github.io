@@ -267,5 +267,5 @@ document.addEventListener('DOMContentLoaded', function() {
         }
         // Use window.location.href for manual navigation, or .replace if you don't want
         // the current page in the browser history before the switch.
-        window.location.href = 'https://asmophacy.github.io/website-vn/';
+        window.location.href = 'https://asmophacy.github.io/vn/';
     }
