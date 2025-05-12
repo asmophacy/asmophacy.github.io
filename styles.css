@@ -803,3 +803,10 @@ a:hover, button:hover, .game-card:hover {
     font-weight: 400;
     font-style: normal;
   }
+  .justmonika {
+        font-family: "Playfair Display", serif;  
+        font-optical-sizing: auto;
+        font-weight: bold;
+        font-style: italic;
+        color: #bb5599;
+      }
