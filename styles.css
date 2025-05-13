@@ -30,6 +30,15 @@ body {
     position: relative;
 }
 
+@font-face {
+    font-family: 'dejavu_sansbook';
+    src: url('DejaVuSans-webfont.eot');
+    src:  url('assets/dejavusans_regular_macroman/DejaVuSans-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
 @keyframes gradientBG {
     0% {
         background-position: 0% 50%;
