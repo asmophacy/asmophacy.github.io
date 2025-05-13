@@ -269,3 +269,24 @@ document.addEventListener('DOMContentLoaded', function() {
         // the current page in the browser history before the switch.
         window.location.href = 'https://asmophacy.github.io/vn/';
     }
+
+    document.addEventListener('DOMContentLoaded', function() {
+
+        // Get the button element by its ID
+        const monikaButton = document.getElementById('monikaButton');
+    
+        // Check if the button was found
+        if (monikaButton) {
+            // Add a click event listener to the button
+            monikaButton.addEventListener('click', function() {
+                const monikaSound = new Audio('assets/monika-laugh.mp3');
+                monikaSound.play().catch(error => {
+                    console.error("Error playing sound:", error);  });
+                setTimeout(function() {
+                    window.location.href = 'https://justmonika.moe';
+                }, 1000); // 1000 milliseconds = 1 second
+            });
+        } else {
+            console.error("Button with ID 'monikaButton' not found!");
+        }
+    });
