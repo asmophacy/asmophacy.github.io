@@ -283,7 +283,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 monikaSound.play().catch(error => {
                     console.error("Error playing sound:", error);  });
                 setTimeout(function() {
-                    window.location.href = 'https://justmonika.moe';
+                    window.location.href = 'https://www.monikaafterstory.com/';
                 }, 1000); // 1000 milliseconds = 1 second
             });
         } else {
