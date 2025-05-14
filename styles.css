@@ -857,19 +857,16 @@ a:hover, button:hover, .game-card:hover {
         font-weight: bold;
         font-style: normal;
         font-size: 20px;
+        letter-spacing: -3px;
         background-color: white;
         color: white;
         margin-top: auto;
         background: none;
         border: none;
         padding: 0;
-        text-shadow:
-        -2px -2px 0 #b95297,
-        2px -2px 0 #b95297,
-        -2px 2px 0 #b95297,
-        2px 2px 0 #b95297;
+        -webkit-text-stroke: #b95297;
+        -webkit-text-stroke-width: 1.6px;
       }
-
 
       @font-face {
         font-family: 'riffic_freebold';
