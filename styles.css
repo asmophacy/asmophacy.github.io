@@ -670,6 +670,7 @@ html {
 
 .button-container {
     display: flex;
+    flex-wrap: wrap;
     gap: 21px; /* Adjust as needed */
     justify-content: center;
      align-items: center;
