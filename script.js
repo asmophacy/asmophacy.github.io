@@ -284,7 +284,7 @@ document.addEventListener('DOMContentLoaded', function() {
                     console.error("Error playing sound:", error);  });
                 setTimeout(function() {
                     window.location.href = 'https://www.monikaafterstory.com/';
-                }, 1000); // 1000 milliseconds = 1 second
+                }, 1200); // 1200 milliseconds = 1.2 second
             });
         } else {
             console.error("Button with ID 'monikaButton' not found!");
