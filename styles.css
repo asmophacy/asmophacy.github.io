@@ -885,3 +885,7 @@ a:hover, button:hover, .game-card:hover, .ok-text:hover {
         font-style: normal;
     
     }
+
+    .embed-game {
+        gap: 20px;
+    }
