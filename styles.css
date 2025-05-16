@@ -676,7 +676,7 @@ html {
      align-items: center;
   }
 /* Change cursor to custom select cursor on hover */
-a:hover, button:hover, .game-card:hover {
+a:hover, button:hover, .game-card:hover, .ok-text:hover {
     cursor: url('assets/hl2-cursor/select.cur'), pointer; /* Fallback to pointer */
 }
 
@@ -770,7 +770,7 @@ div.center {
 
 /* Change cursor to custom select cursor on hover */
     body.jsb-mode {
-a:hover, button:hover, .game-card:hover {
+a:hover, button:hover, .game-card:hover, .ok-text:hover {
     cursor: url('assets/jsab-cursor/select.cur'), pointer; /* Fallback to pointer */
 }}
 
