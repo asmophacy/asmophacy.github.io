@@ -909,9 +909,9 @@ a:hover, button:hover, .game-card:hover, .ok-text:hover {
     }
 
     .highlight-title {
-    color: var(--primary-color);
-    font-weight: 700;
-    font-family: "Playfair Display", serif;
+        color: var(--primary-color);
+        font-weight: 700;
+        font-family: "Playfair Display", serif;
     }
 
     .pink-highlight {
