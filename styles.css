@@ -161,13 +161,6 @@ nav a:hover::before {
     font-family: "Playfair Display", serif;
 }
 
-.highlight-title {
-    color: var(--primary-color);
-    font-weight: 700;
-    font-family: "Playfair Display", serif;
-    text-shadow: 3px -3px 6px
-}
-    
 section {
     margin: 60px auto;
     padding: 40px;
@@ -913,6 +906,12 @@ a:hover, button:hover, .game-card:hover, .ok-text:hover {
         position: relative;
         width: 100%;
         height: 100%;
+    }
+
+    .highlight-title {
+    color: var(--primary-color);
+    font-weight: 700;
+    font-family: "Playfair Display", serif;
     }
 
     .pink-highlight {
