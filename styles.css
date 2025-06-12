@@ -913,3 +913,8 @@ a:hover, button:hover, .game-card:hover, .ok-text:hover {
         width: 100%;
         height: 100%;
     }
+
+    .pink-highlight {
+        color: #FE46A5;
+        font-family: "Edu VIC WA NT Hand Pre", cursive;
+    }
