@@ -141,6 +141,13 @@ nav a:hover::before {
     background: linear-gradient(135deg, #dbeafe, #eff6ff);
     border-radius: var(--border-radius);
     margin: 20px 0;
+    backdrop-filter: blur(5px);
+    border-radius: 10px;
+    box-shadow: 0 6px 6px rgba(0, 0, 0, 0.2), 0 0 20px rgba(0, 0, 0, 0.1);
+    box-shadow: inset 2px 2px 1px 0 rgba(255, 255, 255, 0.5),
+    inset -1px -1px 1px 1px rgba(255, 255, 255, 0.5);
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 2.2);
+    z-index: 2;
 }
 
 .hero-text h1 {
@@ -231,6 +238,10 @@ h2::after {
     font-style: italic;
 }
 
+.about{
+    box-shadow: 0 6px 6px rgba(0, 0, 0, 0.2), 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
 .about-text {
     flex: 2;
 }
@@ -239,6 +250,9 @@ h2::after {
     margin-bottom: 15px;
 }
 
+.games {
+    box-shadow: 0 6px 6px rgba(0, 0, 0, 0.2), 0 0 20px rgba(0, 0, 0, 0.1);
+}
 
 .games-grid {
     display: grid;
@@ -399,6 +413,7 @@ h2::after {
     max-width: 1162px; /* Match the width of the Games section */
     margin: 60px auto; /* Center the sections */
     padding: 40px; /* Add consistent padding */
+    box-shadow: 0 6px 6px rgba(0, 0, 0, 0.2), 0 0 20px rgba(0, 0, 0, 0.1);
 }
 
 footer {
