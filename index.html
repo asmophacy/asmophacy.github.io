@@ -200,14 +200,17 @@
                        <button id="monikaButton" class="ok-text">Ok</button>
                     </div>
                 </div>
-                    <!-- Embed for Snake Game -->
-        <div class="embed-game">
-            <h3>My Snake Game</h3>
-            <iframe src="https://asmophacy.github.io/snake-game/" frameborder="0" style="width:100%; height:750px;"></iframe>
-            
-            <h3>My cute Pong Game</h3>
-            <iframe src="https://asmophacy.github.io/pong-game/" frameborder="0" style="width:100%; height:750px;"></iframe>
-                </div>
+                    
+                    <div class="game-container">
+                        <!-- Buttons to switch between games -->
+                        <div class="game-switcher">
+                            <button class="game-button" data-src="https://asmophacy.github.io/snake-game/" data-title="My Snake Game">Snake Game</button>
+                            <button class="game-button" data-src="https://asmophacy.github.io/pong-game/" data-title="My cute Pong Game">Pong Game</button>
+                        </div>
+                        <h3 id="game-title"></h3>
+                        <!-- The single iframe that will load the games -->
+                        <iframe id="game-frame" src="" frameborder="0"></iframe>
+                    </div>
     </div>
                 
     <!-- Modal for profile image -->
