@@ -290,3 +290,45 @@ document.addEventListener('DOMContentLoaded', function() {
             console.error("Button with ID 'monikaButton' not found!");
         }
     });
+
+document.addEventListener('DOMContentLoaded', function() {
+        
+        // Get the HTML elements we need to work with
+        const gameFrame = document.getElementById('game-frame');
+        const gameTitle = document.getElementById('game-title');
+        const gameButtons = document.querySelectorAll('.game-button');
+
+        // Function to change the game
+        function switchGame(activeButton) {
+            // Get the game URL and title from the button's 'data-*' attributes
+            const newSrc = activeButton.dataset.src;
+            const newTitle = activeButton.dataset.title;
+
+            // Update the iframe source and the title text
+            gameFrame.src = newSrc;
+            gameTitle.textContent = newTitle;
+
+            // Update the button styles
+            // 1. Remove the 'active-game' class from all buttons
+            gameButtons.forEach(button => {
+                button.classList.remove('active-game');
+            });
+
+            // 2. Add the 'active-game' class to the button that was just clicked
+            activeButton.classList.add('active-game');
+        }
+
+        // Add a click event listener to each button
+        gameButtons.forEach(button => {
+            button.addEventListener('click', function() {
+                // When a button is clicked, call our switchGame function
+                switchGame(this);
+            });
+        });
+
+        // Automatically load the first game when the page loads
+        if (gameButtons.length > 0) {
+            switchGame(gameButtons[0]);
+        }
+
+    });
