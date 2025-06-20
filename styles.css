@@ -930,3 +930,11 @@ a:hover, button:hover, .game-card:hover, .ok-text:hover {
         border: 1px solid #ccc;
         border-radius: 5px;
     }
+
+    .sticker {
+        transition: transform 0.3s ease;
+    }
+
+    .sticker:hover {
+        transform: scale(1.1)
+    }
