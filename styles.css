@@ -403,16 +403,15 @@ h2::after {
 
 
 .socials h2 {
-    text-align: left; /* Align the heading to the left */
-    margin-left: 0; /* Remove any centering margin */
+    text-align: left;
+    margin-left: 0;
 }
 
-/* Fix width and alignment for Socials and Miscellaneous sections */
 .socials,
 #miscellaneous {
-    max-width: 1162px; /* Match the width of the Games section */
-    margin: 60px auto; /* Center the sections */
-    padding: 40px; /* Add consistent padding */
+    max-width: 1162px;
+    margin: 60px auto;
+    padding: 40px;
     box-shadow: 0 6px 6px rgba(0, 0, 0, 0.2), 0 0 20px rgba(0, 0, 0, 0.1);
 }
 
@@ -427,8 +426,8 @@ centered-text {
 }
 
 #miscellaneous h2 {
-    text-align: left; /* Align the heading to the left */
-    margin-left: 0; /* Remove any centering margin */
+    text-align: left;
+    margin-left: 0;
 }
 
 @keyframes fadeInUp {
@@ -491,7 +490,6 @@ html {
     scroll-behavior: smooth;
 }
 
-/* Custom Scrollbar */
 ::-webkit-scrollbar {
     width: 10px;
 }
@@ -511,13 +509,11 @@ html {
     background: linear-gradient(to bottom, #60a5fa, #3b82f6);
 }
 
-/* Firefox */
 * {
     scrollbar-width: thin;
     scrollbar-color: #60a5fa rgba(255, 255, 255, 0.1);
 }
 
-/* Profile Image Modal */
 .modal {
     display: none;
     position: fixed;
@@ -684,9 +680,6 @@ html {
     justify-content: center;
      align-items: center;
   }
-a:hover, button:hover, .game-card:hover, .ok-text:hover {
-    cursor: url('assets/hl2-cursor/select.cur'), pointer;
-}
 
 .centered-title {
     text-align: center;
@@ -758,6 +751,10 @@ div.center {
     opacity: 0.9;
   }
 
+  a:hover, button:hover, .game-card:hover, .ok-text:hover, .sticker:hover {
+    cursor: url('assets/hl2-cursor/select.cur'), pointer;
+}
+
   body.jsb-mode {
     font-family: 'Poppins', sans-serif;
     color: var(--text-color);
@@ -775,7 +772,7 @@ div.center {
 }
 
     body.jsb-mode {
-a:hover, button:hover, .game-card:hover, .ok-text:hover {
+a:hover, button:hover, .game-card:hover, .ok-text:hover, .sticker:hover {
     cursor: url('assets/jsab-cursor/select.cur'), pointer;
 }}
 
@@ -932,9 +929,14 @@ a:hover, button:hover, .game-card:hover, .ok-text:hover {
     }
 
     .sticker {
-        transition: transform 0.3s ease;
+        transition: transform 0.3s ease-out;
+        cursor: pointer;
     }
 
     .sticker:hover {
         transform: scale(1.1)
+    }
+
+    .sticker:active {
+        transform: scale(1.1) translateY(-50px);
     }
