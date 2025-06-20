@@ -928,15 +928,25 @@ a:hover, button:hover, .game-card:hover, .ok-text:hover, .sticker:hover {
         border-radius: 5px;
     }
 
-    .sticker {
-        transition: transform 0.3s ease-out;
-        cursor: pointer;
-    }
+.sticker {
+    display: inline-block;
+    transition: transform 0.3s ease-out;
+    cursor: pointer;
+}
 
-    .sticker:hover {
-        transform: scale(1.1)
-    }
+.sticker::before {
+    content: url('assets/sticker_m.png');
+    display: block;
+}
+.sticker:hover {
+    transform: scale(1);
+}
 
-    .sticker:active {
-        transform: scale(1.1) translateY(-50px);
-    }
+.sticker:hover:active {
+    transform: scale(1.1) translateY(-30px);
+    transition-duration: 0.1s;
+}
+
+.sticker:hover:active::before {
+    content: url('assets/sticker_m_wave.png');
+}
