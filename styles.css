@@ -600,37 +600,32 @@ html {
     border-radius: 8px;
     transition: transform 0.2s ease;
     text-align: center;
-    border:
-    none;
     border-radius:
     8px;
     box-shadow: 0 4px #17368a;
     cursor: pointer;
     position: relative;
-    /* Change overflow: hidden to overflow: visible for particles to fly out */
-    overflow: visible; /* {{CHANGE}} */
+    overflow: visible;
     outline: none;
 }
 
 .button-container-particle:active {
-    box-shadow: 0px auto #172098; /* You might want a simpler shadow like `box-shadow: 0 2px #17368a;` */
+    box-shadow: 0px auto #172098;
     transform: translateY(2px);
-    background-color: #4682B4; /* Darker blue on active */
+    background-color: #4682B4;
 }
 
 .particle {
-    position: absolute; /* Positioned relative to the button */
-    left: 50%; /* Start horizontal center */
-    top: 50%; /* Start vertical center */
-    width: 6px; /* Particle size */
-    height: 6px; /* Particle size */
-    background-color: #ADD8E6; /* Particle color (light blue) */
-    border-radius: 50%; /* Make them circles */
-    pointer-events: none; /* Particles should not be clickable */
-    opacity: 1; /* Start fully visible */
-    /* Start centered using translate */
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 6px;
+    height: 6px;
+    background-color: #ADD8E6;
+    border-radius: 50%;
+    pointer-events: none;
+    opacity: 1;
     transform: translate(-50%, -50%);
-    /* Define the transition for animation */
     transition: transform 0.6s cubic-bezier(0.17, 0.84, 0.44, 1), opacity 0.6s ease-out;
 }
 
@@ -685,20 +680,18 @@ html {
 .button-container {
     display: flex;
     flex-wrap: wrap;
-    gap: 21px; /* Adjust as needed */
+    gap: 21px;
     justify-content: center;
      align-items: center;
   }
-/* Change cursor to custom select cursor on hover */
 a:hover, button:hover, .game-card:hover, .ok-text:hover {
-    cursor: url('assets/hl2-cursor/select.cur'), pointer; /* Fallback to pointer */
+    cursor: url('assets/hl2-cursor/select.cur'), pointer;
 }
 
 .centered-title {
     text-align: center;
-    /* Optional: Adjust margin if needed */
-    margin-top: 40px; /* Add some space above */
-    margin-bottom: 20px; /* Add some space below */
+    margin-top: 40px;
+    margin-bottom: 20px;
 }
 
 lmargin {
@@ -727,33 +720,32 @@ div.center {
     border: 2px solid var(--primary-light); 
     color: var(--primary-light);
     background-color: rgba(255, 255, 255, 0.85);
-    padding: 6px 12px; /* Adjust padding */
-    border-radius: 20px; /* Make it pill-shaped */
+    padding: 6px 12px;
+    border-radius: 20px;
     font-size: 0.9em;
     font-family: 'Poppins', sans-serif;
     z-index: 1000;
     pointer-events: none;
     animation: float-and-fade 1.5s ease-out forwards;
     white-space: nowrap;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional: add subtle shadow */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   }
   
-  /* Error state styling adjustment */
-  .floating-copy-text.error { /* Add an error class for specific styling */
-      border-color: #dc2626; /* Red border for error */
-      color: #dc2626; /* Red text for error */
-      background-color: rgba(255, 235, 235, 0.85); /* Lighter red background */
+  .floating-copy-text.error {
+      border-color: #dc2626;
+      color: #dc2626;
+      background-color: rgba(255, 235, 235, 0.85);
   }
   
   
   @keyframes float-and-fade {
     0% {
       opacity: 1;
-      transform: translate(-50%, 0); /* Start centered horizontally */
+      transform: translate(-50%, 0);
     }
     100% {
       opacity: 0;
-      transform: translate(-50%, -30px); /* Move 30px up while fading out */
+      transform: translate(-50%, -30px);
     }
   }
   
@@ -774,7 +766,7 @@ div.center {
     background-size: 400% 400%;
     animation: gradientBG 15s ease infinite;
     line-height: 1.6;
-    cursor: url('assets/jsab-cursor/normal.cur'), auto; /* Fallback to default cursor */
+    cursor: url('assets/jsab-cursor/normal.cur'), auto;
     position: relative;
     --primary-color: #eb2525;
     --primary-light: #f63b3b;
@@ -782,10 +774,9 @@ div.center {
     --secondary-color: #e54646;
 }
 
-/* Change cursor to custom select cursor on hover */
     body.jsb-mode {
 a:hover, button:hover, .game-card:hover, .ok-text:hover {
-    cursor: url('assets/jsab-cursor/select.cur'), pointer; /* Fallback to pointer */
+    cursor: url('assets/jsab-cursor/select.cur'), pointer;
 }}
 
     body.jsb-mode .links {
@@ -840,7 +831,7 @@ a:hover, button:hover, .game-card:hover, .ok-text:hover {
       }
 
       .just-monika-text {
-        /* Text appearance styles */
+
         color: #000000;
         font-family: "allerregular";
         font-size: 17px;
@@ -879,28 +870,6 @@ a:hover, button:hover, .game-card:hover, .ok-text:hover {
         font-weight: normal;
         font-style: normal;
     
-    }
-
-    .embed-game {
-        gap: 20px;
-    }
-
-    .sticker {
-        display: inline-block;
-        position: relative;
-    }
-
-    .sticker-container {
-        position: absolute;
-        bottom: 60px;
-        margin: 0px 60px;
-        right: 0px;
-    }
-
-    .wrapper {
-        position: relative;
-        width: 100%;
-        height: 100%;
     }
 
     .highlight-title {
