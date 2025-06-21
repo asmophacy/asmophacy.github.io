@@ -939,7 +939,7 @@ a:hover, button:hover, .game-card:hover, .ok-text:hover, .sticker:hover {
     display: block;
 }
 .sticker:hover {
-    transform: scale(1);
+    transform: scale(0.9);
 }
 
 .sticker:hover:active {
