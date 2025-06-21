@@ -9,6 +9,10 @@
     --card-bg: #ffffff;
     --border-radius: 12px;
     --transition: all 0.3s ease;
+    --glow-r: 37;
+    --glow-g: 99;
+    --glow-b: 235;
+    --glow-alpha: 0.4;
 }
 
 * {
@@ -210,12 +214,16 @@ h2::after {
     height: 200px;
     margin: 0 auto;
     border-radius: 50%;
-    background-color: var(--primary-light);
+      box-shadow: 0 0 20px 5px rgba(
+    var(--glow-r), 
+    var(--glow-g), 
+    var(--glow-b), 
+    var(--glow-alpha)
+  );
     color: white;
     display: flex;
     align-items: center;
     justify-content: center;
-    box-shadow: 0 10px 20px rgba(59, 130, 246, 0.3);
     overflow: hidden;
 }
 
@@ -761,6 +769,10 @@ div.center {
     --primary-light: #f63b3b;
     --primary-dark: #d81d1d;
     --secondary-color: #e54646;
+    --glow-r: 235;
+    --glow-g: 37;
+    --glow-b: 37;
+    --glow-alpha: 0.4;
 }
 
     body.jsb-mode {
