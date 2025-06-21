@@ -574,11 +574,9 @@ html {
     border-radius: 8px;
     transition: transform 0.2s ease;
     text-align: center;
-    border:
-    none;
-    border-radius:
-    8px;
-    box-shadow: 0 4px #9c1c1c;
+    border:none;
+    border-radius:8px;
+    box-shadow: 0 0 15px rgba(255, 30, 0, 0.7);
     cursor: pointer;
       }
 
@@ -596,9 +594,8 @@ html {
     border-radius: 8px;
     transition: transform 0.2s ease;
     text-align: center;
-    border-radius:
-    8px;
-    box-shadow: 0 4px #17368a;
+    border-radius:8px;
+    box-shadow: 0 0 15px rgba(0, 123, 255, 0.7);
     cursor: pointer;
     position: relative;
     overflow: visible;
@@ -606,7 +603,6 @@ html {
 }
 
 .button-container-particle:active {
-    box-shadow: 0px auto #172098;
     transform: translateY(2px);
     background-color: #4682B4;
 }
@@ -634,11 +630,9 @@ html {
     border-radius: 8px;
     transition: transform 0.2s ease;
     text-align: center;
-    border:
-    none;
-    border-radius:
-    8px;
-    box-shadow: 0 4px #9c1c1c;
+    box-shadow: 0 0 15px rgba(255, 0, 0, 0.7);
+    border:none;
+    border-radius:8px;
     cursor: pointer;
       }
 
@@ -650,17 +644,15 @@ html {
     .button-container-vietnam button {
         font-size: 1.5rem;
         padding: 15px 30px;
-        background-color: var(--primary-color);
+        background-color: #db2017;
         color: white;
         border: none;
         border-radius: 8px;
+        box-shadow: 0 0 15px rgba(255, 0, 4, 0.7);
         transition: transform 0.2s ease;
         text-align: center;
-        border:
-        none;
-        border-radius:
-        8px;
-        box-shadow: 0 4px var(--primary-dark);
+        border: none;
+        border-radius: 8px;
         cursor: pointer;
           }
     
