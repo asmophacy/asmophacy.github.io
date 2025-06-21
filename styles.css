@@ -214,7 +214,7 @@ h2::after {
     height: 200px;
     margin: 0 auto;
     border-radius: 50%;
-      box-shadow: 0 0 20px 5px rgba(
+    box-shadow: 0 0 20px 5px rgba(
     var(--glow-r), 
     var(--glow-g), 
     var(--glow-b), 
@@ -542,7 +542,11 @@ html {
     max-width: 90%;
     max-height: 90vh;
     border-radius: 8px;
-    box-shadow: 0 0 30px rgba(37, 99, 235, 0.3);
+    box-shadow: 0 0 20px 5px rgba(
+    var(--glow-r), 
+    var(--glow-g), 
+    var(--glow-b), 
+    var(--glow-alpha));
     animation: zoomIn 0.3s ease;
 }
 
