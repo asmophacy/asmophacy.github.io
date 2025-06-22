@@ -421,7 +421,7 @@ h2::after {
     box-shadow: 0 6px 6px rgba(0, 0, 0, 0.2), 0 0 20px rgba(0, 0, 0, 0.1);
 }
 
-@media screen and (max-width: 600px) {
+@media (max-width: 600px) {
     .socials,
 #miscellaneous {
     max-width: 380px;
