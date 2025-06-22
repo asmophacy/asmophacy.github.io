@@ -421,6 +421,12 @@ h2::after {
     box-shadow: 0 6px 6px rgba(0, 0, 0, 0.2), 0 0 20px rgba(0, 0, 0, 0.1);
 }
 
+@media screen and (max-width: 600px) {
+    .socials,
+#miscellaneous {
+    max-width: 380px;
+}}
+
 footer {
     text-align: center;
     font-size: 0.9rem;
@@ -934,25 +940,25 @@ a:hover, button:hover, .game-card:hover, .ok-text:hover, .sticker:hover {
         border-radius: 5px;
     }
 
-.sticker {
-    display: inline-block;
-    transition: transform 0.3s ease-out;
-    cursor: pointer;
-}
+    .sticker {
+        display: inline-block;
+        transition: transform 0.3s ease-out;
+        cursor: pointer;
+    }
 
-.sticker::before {
-    content: url('assets/sticker_m.png');
-    display: block;
-}
-.sticker:hover {
-    transform: scale(0.9);
-}
+    .sticker::before {
+        content: url('assets/sticker_m.png');
+        display: block;
+    }
+    .sticker:hover {
+        transform: scale(0.9);
+    }
 
-.sticker:hover:active {
-    transform: scale(1.1) translateY(-30px);
-    transition-duration: 0.1s;
-}
+    .sticker:hover:active {
+        transform: scale(1.1) translateY(-30px);
+        transition-duration: 0.1s;
+    }
 
-.sticker:hover:active::before {
-    content: url('assets/sticker_m_wave.png');
-}
+    .sticker:hover:active::before {
+        content: url('assets/sticker_m_wave.png');
+    }
