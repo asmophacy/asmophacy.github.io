@@ -427,6 +427,14 @@ h2::after {
     max-width: 380px;
 }}
 
+@media (max-width: 480px) {
+    @media (max-width: 600px) {
+    .socials,
+#miscellaneous {
+    max-width: 300px;
+}}
+
+
 
 footer {
     text-align: center;
