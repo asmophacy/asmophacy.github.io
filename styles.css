@@ -427,6 +427,13 @@ h2::after {
     max-width: 380px;
 }}
 
+@media screen and (max-width: 360px) {
+    .socials,
+#miscellaneous {
+    max-width: 380px;
+}}
+
+
 footer {
     text-align: center;
     font-size: 0.9rem;
