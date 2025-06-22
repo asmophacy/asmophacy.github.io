@@ -427,11 +427,10 @@ h2::after {
     max-width: 380px;
 }}
 
-@media (max-width: 480px) {
-    @media (max-width: 600px) {
+@media (max-width: 360px) {
     .socials,
 #miscellaneous {
-    max-width: 300px;
+    max-width: 320px;
 }}
 
 
