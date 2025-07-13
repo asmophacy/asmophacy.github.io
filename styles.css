@@ -969,3 +969,7 @@ a:hover, button:hover, .game-card:hover, .ok-text:hover, .sticker:hover {
     .sticker:hover:active::before {
         content: url('assets/sticker_m_wave.png');
     }
+
+    .test {
+        
+    }
