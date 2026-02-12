@@ -332,6 +332,14 @@ h2::after {
     background-image: url('assets/hitman-WOA.jpg')
 }
 
+.heartsofiron4 {
+    background-image: url('assets/heartsofiron4.jpg')
+}
+
+.warthunder {
+    background-image: url('assets/warthunder.jpg')
+}
+
 .game-card h3 {
     padding: 15px;
     text-align: center;
